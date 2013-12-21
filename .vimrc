@@ -1,4 +1,6 @@
 
+let mapleader=","                             " let , leader key
+
 " ################
 " Install Vundle
 " git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
@@ -21,6 +23,16 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
+
+" NERDTree
+Bundle 'scrooloose/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
+" map <Leader>n :NERDTree<CR>
+let NERDTreeShowHidden=1
+
+
+" jedi vim
+Bundle 'davidhalter/jedi-vim'
 
 " My bundles here: 
 
