@@ -30,9 +30,23 @@ map <C-n> :NERDTreeToggle<CR>
 " map <Leader>n :NERDTree<CR>
 let NERDTreeShowHidden=1
 
-
 " jedi vim
 Bundle 'davidhalter/jedi-vim'
+
+" snipmate
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+" Optional:
+Bundle "honza/vim-snippets"
+
+" Syntastic
+Bundle 'scrooloose/syntastic'
+
+" tComment, for smart comment
+Bundle 'tomtom/tcomment_vim'
+
+Bundle 'Lokaltog/vim-easymotion'
 
 " My bundles here: 
 
@@ -43,7 +57,9 @@ filetype plugin indent on                     " required!
 
 "                                                                              #
 " ============================================: comment
-syntax on
+if has("syntax")
+	syntax on
+endif
 
 imap jj <esc>
 
