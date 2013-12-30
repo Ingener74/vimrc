@@ -37,16 +37,18 @@ Bundle 'davidhalter/jedi-vim'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
-" Optional:
+" - Optional:
 Bundle "honza/vim-snippets"
 
-" Syntastic
+" Syntastic, check syntax
 Bundle 'scrooloose/syntastic'
 
 " tComment, for smart comment
 Bundle 'tomtom/tcomment_vim'
 
+" EasyMotion
 Bundle 'Lokaltog/vim-easymotion'
+" let g:EasyMotion_leader_key = '<Leader'
 
 " My bundles here: 
 
@@ -84,4 +86,15 @@ set number                                    " show line number
 " switch to next tab in normal and editing mode on Ctrl + r
 nnoremap <C-r> :tabnext<CR>
 inoremap <C-r> <Esc>:tabnext<CR>i
+
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Easy window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
