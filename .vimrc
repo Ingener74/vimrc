@@ -52,7 +52,7 @@ Bundle 'Lokaltog/vim-easymotion'
 " let g:EasyMotion_leader_key = '<Leader'
 
 " Zen Coding
-" Bundle 'rstacruz/sparkup'
+Bundle "mattn/emmet-vim"
 
 " My bundles here: 
 
