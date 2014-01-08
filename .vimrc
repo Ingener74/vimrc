@@ -45,10 +45,14 @@ Bundle 'scrooloose/syntastic'
 
 " tComment, for smart comment
 Bundle 'tomtom/tcomment_vim'
+map <leader>c <c-_><c-_>
 
 " EasyMotion
 Bundle 'Lokaltog/vim-easymotion'
 " let g:EasyMotion_leader_key = '<Leader'
+
+" Zen Coding
+" Bundle 'rstacruz/sparkup'
 
 " My bundles here: 
 
