@@ -1,5 +1,5 @@
 
-let mapleader=","								" let , leader key
+let mapleader=","                               " let , leader key
 
 " ################
 " Install Vundle
@@ -14,8 +14,8 @@ let mapleader=","								" let , leader key
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 
-set nocompatible								" be iMproved
-filetype off									" required!
+set nocompatible                                " be iMproved
+filetype off                                    " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -70,7 +70,7 @@ Bundle 'vim-scripts/L9'
 " 2. cd ~/.vim/bundle/YouCompleteMe
 " 3. ./install.sh --clang-completer
 "
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 
 " My bundles here: 
 
@@ -94,13 +94,13 @@ set expandtab
 set autowrite                                   " Automatically save before 
                                                 " commands like : next and :make
 
-set tabstop=4									" size of hard tabstops
-set shiftwidth=4								" size of indent
+set tabstop=4                                   " size of hard tabstops
+set shiftwidth=4                                " size of indent
 
-set softtabstop=4								" a combination of spaces and 
-												" tabs are used to simulate tab 
-												" stops at a width other than 
-												" the (hard)tabstop
+set softtabstop=4                               " a combination of spaces and 
+                                                " tabs are used to simulate tab 
+                                                " stops at a width other than 
+                                                " the (hard)tabstop
 
 " Searches
 set showmatch
@@ -108,7 +108,7 @@ set incsearch
 set ignorecase
 set hlsearch
 
-set title										" show file in window title
+set title                                       " show file in window title
 
 " Show tabs with dots
 " set listchars=tab:··
@@ -123,7 +123,7 @@ set textwidth=80
 
 set colorcolumn=+1
 
-set number										" show line number
+set number                                      " show line number
 
 " switch to next tab in normal and editing mode on Ctrl + r
 nnoremap <C-r> :tabnext<CR>
