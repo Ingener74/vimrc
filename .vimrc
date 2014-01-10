@@ -1,5 +1,5 @@
 
-let mapleader=","                             " let , leader key
+let mapleader=","								" let , leader key
 
 " ################
 " Install Vundle
@@ -14,8 +14,8 @@ let mapleader=","                             " let , leader key
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 
-set nocompatible                              " be iMproved
-filetype off                                  " required!
+set nocompatible								" be iMproved
+filetype off									" required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -53,10 +53,28 @@ Bundle 'Lokaltog/vim-easymotion'
 
 " Zen Coding
 Bundle "mattn/emmet-vim"
+" imap <leader>em <c-y>,
+
+" CSS Color Plugin
+" Bundle "ap/vim-css-color"
+
+" Smart search for anythig
+Bundle 'vim-scripts/FuzzyFinder'
+" " Dependency for Fuzzy finder
+Bundle 'vim-scripts/L9'
+
+" Best C/C++/Clang/C# auto complete plugin
+"
+" install steps for YouCompleteMe 
+" 1. sudo apt-get install build-essential cmake python-dev
+" 2. cd ~/.vim/bundle/YouCompleteMe
+" 3. ./install.sh --clang-completer
+"
+Bundle 'Valloric/YouCompleteMe'
 
 " My bundles here: 
 
-filetype plugin indent on                     " required!
+filetype plugin indent on						" required!
 " 
 " end vundle configures
 " ##################################
@@ -69,23 +87,43 @@ endif
 
 imap jj <esc>
 
-set smartcase                                 " Do smart case matching
+set smartcase                                   " Do smart case matching
+set smarttab
+set expandtab
 
-set autowrite                                 " Automatically save before 
-                                              " commands like : next and :make
+set autowrite                                   " Automatically save before 
+                                                " commands like : next and :make
 
-" ============================================: comment
-set tabstop=4                                 " size of hard tabstops
-set shiftwidth=4                              " size of indent
+set tabstop=4									" size of hard tabstops
+set shiftwidth=4								" size of indent
 
-set softtabstop=4                             " a combination of spaces and 
-                                              " tabs are used to simulate tab 
-											  " stops at a width other than 
-											  " the (hard)tabstop
+set softtabstop=4								" a combination of spaces and 
+												" tabs are used to simulate tab 
+												" stops at a width other than 
+												" the (hard)tabstop
 
-" set textwidth=80
+" Searches
+set showmatch
+set incsearch
+set ignorecase
+set hlsearch
 
-set number                                    " show line number
+set title										" show file in window title
+
+" Show tabs with dots
+" set listchars=tab:··
+" set listchars=tab:»\ ,trail:·,eol:¶
+"
+" set listchars=tab:<CTRL-K>>>\ ,trail:<CTRL-K>.M,eol:<CTRL-K>PI
+set listchars=tab:»\ ,trail:· " My variant
+set list
+
+set textwidth=80
+" set textwidth=120
+
+set colorcolumn=+1
+
+set number										" show line number
 
 " switch to next tab in normal and editing mode on Ctrl + r
 nnoremap <C-r> :tabnext<CR>
@@ -101,4 +139,7 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+set nowritebackup
+set noswapfile
 
