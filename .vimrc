@@ -74,7 +74,7 @@ Bundle 'vim-scripts/L9'
 
 " My bundles here: 
 
-filetype plugin indent on						" required!
+filetype plugin indent on                       " required!
 " 
 " end vundle configures
 " ##################################
@@ -102,6 +102,7 @@ set softtabstop=4                               " a combination of spaces and
                                                 " stops at a width other than 
                                                 " the (hard)tabstop
 
+
 " Searches
 set showmatch
 set incsearch
@@ -115,7 +116,7 @@ set title                                       " show file in window title
 " set listchars=tab:»\ ,trail:·,eol:¶
 "
 " set listchars=tab:<CTRL-K>>>\ ,trail:<CTRL-K>.M,eol:<CTRL-K>PI
-set listchars=tab:»\ ,trail:· " My variant
+set listchars=tab:»\ ,trail:·
 set list
 
 set textwidth=80
@@ -135,9 +136,10 @@ map <left> <nop>
 map <right> <nop>
 
 " Easy window navigation
+" Ctrl h and l for navigation window and Ctrl j and k for half page down and up
 map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
+map <C-j> <C-d>
+map <C-k> <C-u>
 map <C-l> <C-w>l
 
 set nowritebackup
