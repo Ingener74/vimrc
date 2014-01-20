@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Install my .vimrc file
-cp .vimrc ~
+rm -rf ~/.vimrc
+ln -s ~/.vimrc .vimrc
 
 # Install Vundle
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
