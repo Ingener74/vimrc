@@ -72,6 +72,12 @@ Bundle 'vim-scripts/L9'
 "
 " Bundle 'Valloric/YouCompleteMe'
 
+" vimball plugin
+"   install dependencies:
+"       sudo apt-get install ruby
+"       :
+Bundle 'tomtom/vimball.rb'
+
 " My bundles here: 
 
 filetype plugin indent on                       " required!
