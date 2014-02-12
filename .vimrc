@@ -85,6 +85,8 @@ Bundle 'tomtom/vimball.rb'
 "   sudo apt-get install astyle
 Bundle 'Chiel92/vim-autoformat'
 
+nnoremap <leader>fm :Autoformat<CR><CR>
+
 filetype plugin indent on                       " required!
 " 
 " end vundle configures
