@@ -73,12 +73,17 @@ Bundle 'vim-scripts/L9'
 " Bundle 'Valloric/YouCompleteMe'
 
 " vimball plugin
-"   install dependencies:
-"       sudo apt-get install ruby
-"       :
+"
+" dependencies:
+"   sudo apt-get install ruby
 Bundle 'tomtom/vimball.rb'
 
-" My bundles here: 
+" vim autoformat
+" homepage: https://github.com/Chiel92/vim-autoformat
+" 
+" dependencies: 
+"   sudo apt-get install astyle
+Bundle 'Chiel92/vim-autoformat'
 
 filetype plugin indent on                       " required!
 " 
