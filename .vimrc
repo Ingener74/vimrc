@@ -132,7 +132,7 @@ set title                                       " show file in window title
 set listchars=tab:»\ ,trail:·
 set list
 
-set textwidth=80
+set textwidth=120
 " set textwidth=120
 
 set colorcolumn=+1
